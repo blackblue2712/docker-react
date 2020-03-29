@@ -6,4 +6,4 @@ before_install:
   - docker build -t liars2712/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run liars2712/docker-react npm run test -- --coverage
+  - docker run liars2712/docker-react npm run test -- --watchAll=false
